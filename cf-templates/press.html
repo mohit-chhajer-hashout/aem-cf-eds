@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{{properties.title}}</title>
+    <title>{{properties.elements.newsTitle.value}}</title>
   </head>
   <body>
     <header></header>
@@ -12,7 +12,7 @@
             <div>
               <p>
                 <picture>
-                  <img src="{{{properties.elements.image.value}}}">
+                  <img src="{{{properties.elements.heroImage.value}}}">
                 </picture>
               </p>
               <h1>{{properties.elements.newsTitle.value}}</h1>
@@ -23,7 +23,21 @@
         <div class="columns">
           <div>
             <div>
+              <p>
+                <picture>
+                  <img src="{{{properties.elements.leftImage.value}}}">
+                </picture>
+              </p>
+            </div>
+            <div>
               <p>{{{properties.elements.text.value}}}</p>
+            </div>
+            <div>
+              <p>
+                <picture>
+                  <img src="{{{properties.elements.rightImage.value}}}">
+                </picture>
+              </p>
             </div>
           </div>
         </div>
